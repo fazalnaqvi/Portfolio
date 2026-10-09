@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me | Fazal Naqvi</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- Full-size screens (laptops and desktops): 960px and wider -->
+    <link href="css/laptop.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width:960px)">
+    <!-- Tablets: 481px to 959px -->
+    <link href="css/tablet.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width:481px) and (max-width:959px)">
+    <!-- Smartphones: 480px and narrower -->
+    <link href="css/mobile.css" rel="stylesheet" type="text/css"
+    media="only screen and (max-width:480px)">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <p class="logo">Fazal Naqvi</p>
+            <nav>
+                <a class="button" href="index.html">Home</a>
+                <a class="button active" href="about.html">About Me</a>
+                <a class="button" href="projects.html">Projects</a>
+                <a class="button" href="contact.html">Contact Me</a>
+            </nav>
+            <!--The clear class style clears float-->
+            <div class="clear"></div>
+        </header>
+
+        <main>
+            <article>
+                <h1>About Me</h1>
+                <section>
+                    <figure>
+                        <img src="images/july2026.jpg" alt="Photo of Fazal Naqvi">
+                        <figcaption>Fazal Naqvi</figcaption>
+                    </figure>
+                    <p>I'm currently a 3rd year Networking and Information
+                        Technology Security student at Ontario Tech University.
+                        Outside of class I like to listen to music, play video games,
+                        work on cars and hang out with friends. I have done a few projects which are
+                        located in the "Projects" section.</p>
+                    <div class="clear"></div>
+                </section>
+                <section>
+                    <h2>Meet me</h2>
+                    <!-- short introductory video about website with and a poster when video is not playing -->
+                        <source src="media/intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <address>
+                <p>Contact me at <a href="mailto:fazal.naqvi@ontariotechu.net">fazal.naqvi@ontariotechu.net</a></p>
+            </address>
+            <p>&copy; 2026 by Fazal Naqvi</p>
+        </footer>
+    </div>
+</body>
+</html>
