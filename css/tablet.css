@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 17px;
+    color: #2A0081;
+    background-color: #FFFDFE;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ 
+/* images and video shrink with the screen ) */
+img, video {
+    max-width: 100%;    
+    height: auto;
+}
+
+#wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFDFE;
+}
+
+/* LINEAR GRADIENT (to right) on the header: yellow to sky blue */
+header {
+    background: linear-gradient(to right, #F5C700 0%, #B7E7FC 100%);
+    padding-top: 12px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+/* Navigation links: large and easy to tap, sitting side by side */
+.button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #2A0081;
+    display: inline-block;
+    padding: 8px 10px 5px 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.button:hover {
+    border-bottom: 3px solid #2A0081;
+}
+
+/* The page you are on */
+.active {
+    font-weight: bold;
+    border-bottom: 3px solid #2A0081;
+}
+
+/* ANGLED LINEAR GRADIENT on the home page hero: sky blue to yellow */
+main {
+    padding: 30px 6%;
+}
+
+.hero {
+    background: linear-gradient(135deg, #B7E7FC 0%, #F5C700 100%);
+    padding: 40px 6%;
+    text-align: center;
+}
+
+.hero p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Bigger buttons  */
+.hero .wide {
+    margin: 8px 6px;
+    padding: 12px 24px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #F5C700;
+    background-color: #2A0081;
+    border: 2px solid #2A0081;
+    border-radius: 4px;
+}
+
+.hero .wide:hover {
+    color: #2A0081;
+    background-color: #F5C700;
+    border: 2px solid #2A0081;
+}
+
+/* About page */
+figure {
+    float: left;
+    width: 35%;
+    margin: 15px;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+video {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #000000;
+}
+
+/* Projects page */
+.project {
+    background-color: #B7E7FC;
+    border-left: 6px solid #F5C700;
+    width: 44%;
+    float: left;
+    margin: 2%;
+    min-height: 280px;
+}
+
+/* Contact form */
+input, textarea {
+    width: 80%;
+    margin-top: 5px;
+    padding: 6px;
+    font-size: 16px;
+    color: #2A0081;
+    background-color: #FFFDFE;
+    border: 2px solid #2A0081;
+    border-radius: 5px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+button {
+    margin: 15px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #F5C700;
+    color: #2A0081;
+    border: 2px solid #2A0081;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2A0081;
+    color: #F5C700;
+}
+
+/* Footer */
+footer {
+    background-color: #2A0081;
+    color: #FFFDFE;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer a {
+    color: #F5C700;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Name on the left, navigation on the right */
+header {
+    text-align: left;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.logo {
+    float: left;
+    margin-top: 6px;
+    margin-left: 0px;
+}
+
+nav {
+    float: right;
+}
+
+/* Smaller card text on tablets so the two columns stay the same height */
+.project h2 {
+    font-size: 20px;
+}
+
+.project p {
+    font-size: 15px;
+}
