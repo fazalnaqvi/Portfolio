@@ -1,7 +1,11 @@
+<!--Tells the browser that its html-->
 <!DOCTYPE html>
+<!--Tells the browser that this is an english page-->
 <html lang="en">
 <head>
+    <!--make sure characters show up properly-->
     <meta charset="UTF-8">
+    <!--sets the browser tab name-->
     <title>About Me | Fazal Naqvi</title>
     <meta name="viewport" content="width=device-width">
     <!-- Full-size screens (laptops and desktops): 960px and wider -->
@@ -15,28 +19,41 @@
     media="only screen and (max-width:480px)">
 </head>
 
+<!--Everything here is what is viewable on the page-->
 <body>
+    <!--wrapper holds the whole page so i can style it as one box-->
     <div id="wrapper">
         <header>
             <p class="logo">Fazal Naqvi</p>
+     <!-- nav holds the links to all 4 pages. the active class marks the page you're on -->
             <nav>
+                <!--link to the home page-->
                 <a class="button" href="index.html">Home</a>
+                <!--link to the about me page-->
                 <a class="button active" href="about.html">About Me</a>
+                <!--link to the projects page-->
                 <a class="button" href="projects.html">Projects</a>
+                <!--link to the contact me page-->
                 <a class="button" href="contact.html">Contact Me</a>
             </nav>
             <!--The clear class style clears float-->
             <div class="clear"></div>
         </header>
 
+        <!--main is part of the page thats different on each page-->
         <main>
+            <!--article is the main content of this page-->
             <article>
+                <!-- main heading of the page-->
                 <h1>About Me</h1>
                 <section>
                     <figure>
+                        <!-- Photo of me with alt text-->
                         <img src="images/july2026.jpg" alt="Photo of Fazal Naqvi">
+                        <!--Caption-->
                         <figcaption>Fazal Naqvi</figcaption>
                     </figure>
+                    <!-- Paragraph for the page-->
                     <p>I'm currently a 3rd year Networking and Information
                         Technology Security student at Ontario Tech University.
                         Outside of class I like to listen to music, play video games,
@@ -54,12 +71,13 @@
                 </section>
             </article>
         </main>
-
+          <!-- footer: my email and copyright-->
         <footer>
             <address>
                 <p>Contact me at <a href="mailto:fazal.naqvi@ontariotechu.net">fazal.naqvi@ontariotechu.net</a></p>
             </address>
-            <p>&copy; 2026 by Fazal Naqvi</p>
+            <!--Copyright line-->
+            <p>&copy; 2026 Copyright Fazal Naqvi. All rights reserved</p>
         </footer>
     </div>
 </body>

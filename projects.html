@@ -1,7 +1,11 @@
+<!--Tells the browser that its html-->
 <!DOCTYPE html>
+<!--Tells the browser that this is an english page-->
 <html lang="en">
 <head>
+     <!--make sure characters show up properly-->
     <meta charset="UTF-8">
+      <!--sets the browser tab name-->
     <title>Projects | Fazal Naqvi</title>
     <meta name="viewport" content="width=device-width">
     <!-- Full-size screens (laptops and desktops): 960px and wider -->
@@ -15,48 +19,64 @@
     media="only screen and (max-width:480px)">
 </head>
 
+<!--Everything here is what is viewable on the page-->
 <body>
+    <!--wrapper holds the whole page so i can style it as one box-->
     <div id="wrapper">
         <header>
             <p class="logo">Fazal Naqvi</p>
+            <!-- nav holds the links to all 4 pages. the active class marks the page you're on -->
             <nav>
+                <!--link to the home page-->
                 <a class="button" href="index.html">Home</a>
+                <!--link to the about me page-->
                 <a class="button" href="about.html">About Me</a>
+                <!--link to the projects page-->
                 <a class="button active" href="projects.html">Projects</a>
+                <!--link to the contact me page-->
                 <a class="button" href="contact.html">Contact Me</a>
             </nav>
             <!--The clear class style clears float-->
             <div class="clear"></div>
         </header>
 
+        <!-- main is the part of the page that's different on each page -->
         <main>
+            <!-- article is the main content of this page -->
             <article>
+                <!-- main heading of the page -->
                 <h1>Projects</h1>
+                <!--first project with heading and small description-->
                 <section class="project">
                     <h2>Home Media Server</h2>
                     <p>A personal server I built and maintain, running Jellyfin to stream my movie and TV show library. It also works as home storage for my files, and sometimes I use it to host open box servers for others to interact with.</p>
                 </section>
+                <!--second project with heading and small description-->
                 <section class="project">
                     <h2>Python Programming</h2>
                     <p>Intro to Programming course in 1st year, where I learned Python. I practised core programming skills such as variables, loops and functions.</p>
                 </section>
+                <!--third project with heading and small description-->
                 <section class="project">
                     <h2>Cisco Networking Labs</h2>
                     <p>I configured and verified IPv4 and IPv6 addressing and IP routing across different network topologies. I diagnosed and fixed connectivity problems, then re-tested reachability after each fix to confirm the problem was solved.</p>
                 </section>
+                <!--forth project with heading and small description-->
                 <section class="project">
                     <h2>Custom PC Builder</h2>
                     <p>Built multiple desktop PCs, selecting compatible components, assembling the hardware, and getting each system up and running.</p>
                 </section>
+                   <!--The clear class style clears float-->
                 <div class="clear"></div>
             </article>
         </main>
 
+        <!-- footer: my email and copyright-->
         <footer>
             <address>
                 <p>Contact me at <a href="mailto:fazal.naqvi@ontariotechu.net">fazal.naqvi@ontariotechu.net</a></p>
             </address>
-            <p>&copy; 2026 by Fazal Naqvi</p>
+            <p>&copy; 2026 Copyright Fazal Naqvi. All rights reserved</p>
         </footer>
     </div>
 </body>

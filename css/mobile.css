@@ -1,14 +1,22 @@
 @charset "UTF-8";
+/* mobile.css - smartphones, 480px wide and narrower. */
 
+/* body is the whole page. this sets the font, text colour and background for everything on it */
 body {
     font-family: Verdana, Geneva, Arial, sans-serif;
+    /* the font. if the first one isn't on the computer it tries the next ones */
     font-size: 16px;
+    /* text colour */
     color: #2A0081;
+    /* background colour */
     background-color: #FFFDFE;
+    /* space INSIDE the box (top/bottom first, then left/right) */
     padding: 0px;
+    /* space OUTSIDE the box */
     margin: 0px;
 }
 
+/* small space on the left and right of all headings and text so nothing is stuck to the edge */
 h1, h2, h3, h4, h5, h6, p, li {
     margin-left: 15px;
     margin-right: 15px;
@@ -20,6 +28,7 @@ img, video {
     height: auto;
 }
 
+/* wrapper is the box that holds the whole page. # means it's an id in the html */
 #wrapper {
     width: 100%;
     margin-left: auto;
@@ -35,6 +44,7 @@ header {
     text-align: center;
 }
 
+/* my name at the top. means it's a class in the html */
 .logo {
     font-size: 22px;
     font-weight: bold;
@@ -44,20 +54,25 @@ header {
 
 /* Navigation links: large and easy to tap, sitting side by side */
 .button {
+    /* how big the text is */
     font-size: 18px;
+    /* removes the underline from links */
     text-decoration: none;
+     /* text colour */
     color: #2A0081;
     display: inline-block;
     padding: 8px 10px 5px 10px;
     border-bottom: 3px solid transparent;
 }
 
+/* hover means when the mouse is on top of it, the underline shows up */
 .button:hover {
     border-bottom: 3px solid #2A0081;
 }
 
 /* The page you are on */
 .active {
+    /* the link for the page you're currently on is bold and underlined */
     font-weight: bold;
     border-bottom: 3px solid #2A0081;
 }
@@ -67,12 +82,15 @@ main {
     padding: 20px 4%;
 }
 
+/* hero is the big intro box on the home page. it uses the ANGLED GRADIENT, sky blue to yellow */
 .hero {
+    /* background where the gradiant is */
     background: linear-gradient(135deg, #B7E7FC 0%, #F5C700 100%);
     padding: 40px 6%;
     text-align: center;
 }
 
+/* keeps the text in the hero from touching the sides */
 .hero p {
     margin-left: 15px;
     margin-right: 15px;
@@ -80,7 +98,9 @@ main {
 
 /* Bigger buttons used inside hero so that its easier to press */
 .hero .wide {
-    margin: 8px 6px;
+    /* space OUTSIDE the box */
+    margin: 8px 6px; 
+    /* space INSIDE the box (top/bottom first, then left/right) */
     padding: 12px 24px;
     font-size: 17px;
     font-weight: bold;
@@ -90,6 +110,7 @@ main {
     border-radius: 4px;
 }
 
+/* colours flip when you hover over the hero buttons */
 .hero .wide:hover {
     color: #2A0081;
     background-color: #F5C700;
@@ -103,11 +124,13 @@ figure {
     margin: 15px auto;
 }
 
+/* the name under my photo */
 figcaption {
     text-align: center;
     font-weight: bold;
 }
 
+/* about page: size of my intro video */
 video {
     width: 90%;
     margin-left: 5%;
@@ -126,24 +149,33 @@ video {
 
 /* Contact form */
 input, textarea {
+    /* how wide it is. */
     width: 80%;
+    /* space outside the box, above it */
     margin-top: 5px;
+    /* space INSIDE the box (top/bottom first, then left/right) */
     padding: 6px;
+    /* how big the text is */
     font-size: 16px;
+    /* text colour */
     color: #2A0081;
+    /* background colour */
     background-color: #FFFDFE;
     border: 2px solid #2A0081;
     border-radius: 5px;
 }
 
+/* bold text above each form box */
 form label {
     font-weight: bold;
 }
 
+/* less space between each part of the form */
 form p {
     margin-bottom: 5px;
 }
 
+/* the send message button */
 button {
     margin: 15px;
     padding: 12px 24px;
@@ -155,6 +187,7 @@ button {
     border-radius: 4px;
 }
 
+/* colours flip when you hover over the send button */
 button:hover {
     background-color: #2A0081;
     color: #F5C700;
@@ -169,10 +202,12 @@ footer {
     padding-bottom: 5px;
 }
 
+/* email link in the footer is yellow so you can see it on purple */
 footer a {
     color: #F5C700;
 }
 
+/* clear stops anything from sitting next to the floated stuff, so the layout below doesn't break */
 .clear {
     clear: both;
 }

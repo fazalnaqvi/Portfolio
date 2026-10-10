@@ -1,7 +1,11 @@
+<!--Tells the browser that its html-->
 <!DOCTYPE html>
+<!--Tells the browser that this is an english page-->
 <html lang="en">
 <head>
+    <!--make sure characters show up properly-->
     <meta charset="UTF-8">
+    <!--sets the browser tab name-->
     <title>Contact Me | Fazal Naqvi</title>
     <meta name="viewport" content="width=device-width">
     <!-- Full-size screens (laptops and desktops): 960px and wider -->
@@ -15,57 +19,80 @@
     media="only screen and (max-width:480px)">
 </head>
 
+<!--Everything here is what is viewable on the page-->
 <body>
+     <!--wrapper holds the whole page so i can style it as one box-->
     <div id="wrapper">
         <header>
             <p class="logo">Fazal Naqvi</p>
+            <!-- nav holds the links to all 4 pages. the active class marks the page you're on -->
             <nav>
+                <!--link to the home page-->
                 <a class="button" href="index.html">Home</a>
+                <!--link to the about me page-->
                 <a class="button" href="about.html">About Me</a>
+                <!--link to the projects page-->
                 <a class="button" href="projects.html">Projects</a>
+                <!--link to the contact me page-->
                 <a class="button active" href="contact.html">Contact Me</a>
             </nav>
             <!--The clear class style clears float-->
             <div class="clear"></div>
         </header>
 
+          <!--main is part of the page thats different on each page-->
         <main>
+            <!--article is the main content of this page-->
             <article>
+                <!-- main heading of the page-->
                 <h1>Contact Me</h1>
                 <p>If you're interested in connecting with me or simply want to leave a question, send it here.</p>
                 <!-- Validation uses HTML5 attributes -->
+                <!-- form uses formspree to send comments. method post sends the info, name is just a label for the form -->
                 <form action="https://formspree.io/f/moejdwke" method="post" name="contact_form">
                     <p>
+                        <!--Asks for the users name -->
                         <label for="name">Name:</label><br>
+                        <!-- required means you can't leave it empty -->
                         <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     </p>
                     <p>
+                        <!--asks for the users email address-->
                         <label for="email">Email:</label><br>
+                        <!-- type email checks that it looks like an email address such as having an @ -->
                         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                     </p>
                     <p>
+                        <!--asks for the users phone number-->
                         <label for="phone">Cell No.:</label><br>
+                        <!-- tel is for phone numbers. it must have exactly 10 digits. title is the message shown if it's wrong -->
                         <input type="tel" id="phone" name="phone" placeholder="1234567890"
                         pattern="[0-9]{10}" title="Enter 10 digits with no spaces or dashes" required>
                     </p>
                     <p>
+                        <!--This is for the user to type their comments-->
                         <label for="comments">Comments:</label><br>
+                           <!-- bigger box for longer text. -->
                         <textarea id="comments" name="comments" rows="6" required></textarea>
                     </p>
                     <p>
+                        <!-- Verification for the user to answe to make sure they are not a robot-->
                         <label for="human">What is 1 + 1?</label><br>
+                        <!--the answer is 2-->
                         <input type="text" id="human" name="human" pattern="2" title="Enter the answer to 1 + 1" required>
                     </p>
+                    <!-- button that sends the form. the browser checks all the rules first -->
                     <button type="submit">Send message</button>
                 </form>
             </article>
         </main>
-
+        <!-- footer: my email and copyright-->
         <footer>
             <address>
                 <p>Contact me at <a href="mailto:fazal.naqvi@ontariotechu.net">fazal.naqvi@ontariotechu.net</a></p>
             </address>
-            <p>&copy; 2026 by Fazal Naqvi</p>
+            <!--Copyright line-->
+            <p>&copy; 2026 Copyright Fazal Naqvi. All rights reserved</p>
         </footer>
     </div>
 </body>

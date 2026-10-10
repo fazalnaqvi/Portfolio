@@ -1,8 +1,11 @@
 <!--Tells the browser that its html-->
 <!DOCTYPE html>
+<!--Tells the browser that this is an english page-->
 <html lang="en">
 <head>
+    <!--make sure characters show up properly-->
     <meta charset="UTF-8">
+    <!--sets the browser tab name-->
     <title>Home | Fazal Naqvi</title>
     <meta name="viewport" content="width=device-width">
     <!-- Full-size screens (laptops and desktops): 960px and wider -->
@@ -16,14 +19,21 @@
     media="only screen and (max-width:480px)">
 </head>
 
+<!--Everything here is what is viewable on the page-->
 <body>
+     <!--wrapper holds the whole page so i can style it as one box-->
     <div id="wrapper">
         <header>
             <p class="logo">Fazal Naqvi</p>
+            <!-- nav holds the links to all 4 pages. the active class marks the page you're on -->
             <nav>
+                <!--link to the home page-->
                 <a class="button active" href="index.html">Home</a>
+                <!--link to the about me page-->
                 <a class="button" href="about.html">About Me</a>
+                <!--link to the Projects page-->
                 <a class="button" href="projects.html">Projects</a>
+                <!--link to the contact me page -->
                 <a class="button" href="contact.html">Contact Me</a>
             </nav>
             <!--The clear class style clears float-->
@@ -32,14 +42,20 @@
 
         <main>
             <article>
+                <!-- hero is the big intro box on the home page, it has the angled gradient -->
                 <section class="hero">
+                    <!-- main heading of the page -->
                     <h1>Hi, I'm Fazal Naqvi</h1>
                     <p>3rd year Networking and Information Technology Security student at Ontario Tech University.</p>
+                    <!-- button that links to the projects page -->
                     <a class="button wide" href="projects.html">See my projects</a>
+                    <!-- button that links to the about me page -->
                     <a class="button wide" href="about.html">Learn more</a>
                     <div class="clear"></div>
                 </section>
+                <!-- section is one part inside the article -->
                 <section>
+                    <!--smaller heading-->
                     <h2>Brief Introduction</h2>
                     <p>Welcome to my website.</p>
                     <p>Here you will find out about who I am and what my interests are.
@@ -48,12 +64,13 @@
                 </section>
             </article>
         </main>
-
+        <!-- footer: my email and copyright-->
         <footer>
             <address>
                 <p>Contact me at <a href="mailto:fazal.naqvi@ontariotechu.net">fazal.naqvi@ontariotechu.net</a></p>
             </address>
-            <p>&copy; 2026 by Fazal Naqvi</p>
+            <!-- copyright line -->
+            <p>&copy; 2026 Copyright Fazal Naqvi. All rights reserved</p>
         </footer>
     </div>
 </body>
