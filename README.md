@@ -3,6 +3,8 @@ Fazal Naqvi 100975935
 
 the github repo: https://github.com/fazalnaqvi/Portfolio
 
+Link to website:https://fazalnaqvi.github.io/Portfolio/
+
 written using VS code
 
 The viewport sizes that were used was 3 different CSS files, 
