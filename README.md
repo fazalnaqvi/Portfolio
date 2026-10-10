@@ -3,6 +3,8 @@ Fazal Naqvi 100975935
 
 the github repo: https://github.com/fazalnaqvi/Portfolio
 
+written using VS code
+
 The viewport sizes that were used was 3 different CSS files, 
 one for each screen size. Each page is able to link all three and a media qeury decides
 which one loads. 
@@ -32,6 +34,16 @@ White (#FFFDFE) for the page background
 Purple (#2A0081) for all the text, footer, hero buttons and form borders
 SkyBlue (#B7E7FC) head and hero gradients, project boxes 
 
+W3C HTML Validator: i checked all 4 html page and all passed
+![html index](images/testing/html-index.png)
+![html about](images/testing/html-about.png)
+![html projects](images/testing/html-projects.png)
+![html contact](images/testing/html-contact.png)
+
+W3C CSS validator: i checked all 3 CSS files and all padded
+![css laptop](images/testing/css-laptop.png)
+![css tablet](images/testing/css-tablet.png)
+![css mobile](images/testing/css-mobile.png)
 
 Most of my code is from the course lectures (weeks 1-4), like the media query, floats and the gradiants and the form fields.
 
